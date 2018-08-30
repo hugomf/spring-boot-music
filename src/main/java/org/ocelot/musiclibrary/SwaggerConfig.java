@@ -1,7 +1,5 @@
 package org.ocelot.musiclibrary;
 
-import java.util.Collection;
-
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -9,7 +7,6 @@ import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
 import springfox.documentation.service.ApiInfo;
 import springfox.documentation.service.Contact;
-import springfox.documentation.service.VendorExtension;
 import springfox.documentation.spi.DocumentationType;
 import springfox.documentation.spring.web.plugins.Docket;
 
@@ -27,7 +24,7 @@ public class SwaggerConfig {
 	private ApiInfo metaData() {
         ApiInfo apiInfo = new ApiInfo(
                 "Spring Boot REST API",
-                "Spring Boot REST API for Online Store",
+                "Spring Boot REST API for Music Library",
                 "1.0",
                 "Terms of service",
                 new Contact("John Thompson", "https://springframework.guru/about/", "john@springfrmework.guru"),
